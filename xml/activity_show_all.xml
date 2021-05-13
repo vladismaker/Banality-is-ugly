@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="3"
+    android:orientation="vertical"
+    tools:context=".ShowAllActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        app:layout_scrollFlags="scroll|enterAlways"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#BABABA"/>
+    <!--Этап выбора-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingHorizontal="7dp">
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:elevation="4dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_clothes_normal"
+            />
+        <!--            <View
+                        android:layout_width="20dp"
+                        android:layout_height="2dp"
+                        android:elevation="4dp"
+                        android:background="@color/grey"/>-->
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:elevation="4dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_color_normal"
+
+            />
+        <View
+            android:layout_width="20dp"
+            android:layout_height="2dp"
+            android:elevation="4dp"
+            android:background="@color/grey"/>
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:elevation="4dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_background_normal"
+
+            />
+        <View
+            android:layout_width="20dp"
+            android:layout_height="2dp"
+            android:elevation="4dp"
+            android:background="@color/grey"/>
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:elevation="4dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_words_normal"
+
+            />
+        <!--            <View
+                        android:layout_width="20dp"
+                        android:layout_height="2dp"
+                        android:elevation="4dp"
+                        android:background="@color/grey"/>-->
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:elevation="4dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_font_normal"
+
+            />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/frame_main_place"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:paddingVertical="50dp"
+        android:paddingHorizontal="30dp"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:shadowColor="@color/grey"
+            android:shadowRadius="10"
+            android:text="NEXT"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:background="@drawable/button_light_grey"/>
+    </LinearLayout>
+
+</LinearLayout>

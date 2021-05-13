@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<androidx.recyclerview.widget.RecyclerView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/library_background_recycle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"/>-->
+<!--<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:background="#FFFFFF">
+
+    &lt;!&ndash;    <Space
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"/>&ndash;&gt;
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/library_background_recycler"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        />
+    &lt;!&ndash;android:id="@+id/drawer_list"&ndash;&gt;
+
+    &lt;!&ndash;    <Space
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"/>&ndash;&gt;
+
+
+</LinearLayout>-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UseFragment"
+    android:background="@color/light_gray"
+    android:orientation="vertical">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:paddingHorizontal="7dp"
+        android:background="@drawable/stage">
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:elevation="4dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_clothes_normal"
+        />
+    <!--            <View
+                    android:layout_width="20dp"
+                    android:layout_height="2dp"
+                    android:elevation="4dp"
+                    android:background="@color/grey"/>-->
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:elevation="4dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_color_normal"
+
+        />
+    <View
+        android:layout_width="20dp"
+        android:layout_height="2dp"
+        android:elevation="4dp"
+        android:background="@color/grey"/>
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:elevation="4dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_background_click"
+
+        />
+    <View
+        android:layout_width="20dp"
+        android:layout_height="2dp"
+        android:elevation="4dp"
+        android:background="@color/grey"/>
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:elevation="4dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_words_normal"
+
+        />
+    <!--            <View
+                    android:layout_width="20dp"
+                    android:layout_height="2dp"
+                    android:elevation="4dp"
+                    android:background="@color/grey"/>-->
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:elevation="4dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_font_normal"
+
+        />
+</LinearLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--<TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="USE"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:fontFamily="casual"/>-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/library_background_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="15dp"
+                />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>
