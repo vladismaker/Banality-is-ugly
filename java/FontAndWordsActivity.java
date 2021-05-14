@@ -201,32 +201,7 @@ public class FontAndWordsActivity extends AppCompatActivity {
             array_text_view.get(range + count).setTextColor(getResources().getColor(R.color.bejeviy));
             count = count + 8;
         }
-/*        for (int j = 0; j < horizontalSize; j++) {
-            if(j >= min && j <= max){
-
-            }
-            for (int i = 0; i < verticalSize; i++) {
-
-            }
-        }*/
-/*        for (String e1 : wordArrayOne){
-            for (String e2 : wordArrayTwo){
-                if(e1.equals(e2)){
-
-                }
-            }
-        }*/
-/*        if(overlapChar.isEmpty()){
-            Toast toast = Toast.makeText(getApplicationContext(),
-                    "Совпадений нет", Toast.LENGTH_SHORT);
-            toast.show();
-        } else {
-            Toast toast = Toast.makeText(getApplicationContext(),
-                    "Совпадение по буквам: " + overlapChar, Toast.LENGTH_SHORT);
-            toast.show();
-        }*/
-
-
+        
         //Проверить пересечение слов
         //Создать алгоритм расположения слов в таблице
         //Заполнить остальное пространство рандомными буквами
