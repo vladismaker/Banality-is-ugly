@@ -57,7 +57,6 @@ public class FontAndWordsActivity extends AppCompatActivity {
         }
         RecyclerView list = findViewById(R.id.font_recycler);
         FontAndWordsAdapter adapter = new FontAndWordsAdapter(fontImages);
-        //list.setNestedScrollingEnabled(false);
         list.setLayoutManager(new GridLayoutManager(this, 1));
         list.setAdapter(adapter);
 
@@ -67,7 +66,7 @@ public class FontAndWordsActivity extends AppCompatActivity {
                 Intent intent = new Intent(FontAndWordsActivity.this, ShowAllActivity.class);
                 intent.putExtra(ShowAllActivity.EXTRA_FONT_ID, position);
                 intent.putExtra(ShowAllActivity.EXTRA_BACKGROUND_ID, backgroundId);
-                if(!wordOneString.isEmpty() || !wordTwoString.isEmpty()){
+                if(!wordOneString.isEmpty() && !wordTwoString.isEmpty()){
                     intent.putExtra(ShowAllActivity.EXTRA_WORDS_ONE, wordOneString);
                     intent.putExtra(ShowAllActivity.EXTRA_WORDS_TWO, wordTwoString);
                 }else   {
@@ -76,8 +75,6 @@ public class FontAndWordsActivity extends AppCompatActivity {
                     //Подстветить ошибкой поля ввода слов
                     //и вывести уведомление Toast
                 }
-                //intent.putExtra(String.valueOf(ShowAllActivity.EXTRA_FILL_GRID), fillGrid);
-
                 startActivity(intent);
             }
         });
@@ -155,9 +152,6 @@ public class FontAndWordsActivity extends AppCompatActivity {
         wordTwoTextView = findViewById(R.id.word_two);
         wordOneString = wordOne.getText().toString();
         wordTwoString = wordTwo.getText().toString();
-
-        //wordOneTextView.setText(wordOneString);
-        //wordTwoTextView.setText(wordTwoString);
         overlapChar.clear();
         createGrid(wordOneString, wordTwoString);
     }
@@ -199,7 +193,7 @@ public class FontAndWordsActivity extends AppCompatActivity {
         for (int i = 0; i < wordOneString.length(); i++) {
             array_text_view.get(range + count).setText(wordArrayOne.get(i));
             array_text_view.get(range + count).setTextColor(getResources().getColor(R.color.bejeviy));
-            count = count + 8;
+            count = count + horizontalSize;
         }
         
         //Проверить пересечение слов
@@ -209,9 +203,8 @@ public class FontAndWordsActivity extends AppCompatActivity {
     }
     public void fillGrid(){
 
-        for (int i = 0; i < 56; i++) {
+        for (int i = 0; i < (horizontalSize*verticalSize); i++) {
             int number = randomChoiceChar();
-            //fillGrid.add(arr_english_char[number]);
             array_text_view.get(i).setText(arr_english_char[number]);
         }
     }
