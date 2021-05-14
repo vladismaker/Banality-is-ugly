@@ -29,11 +29,6 @@
                 android:padding="5dp"
                 android:src="@drawable/ic_clothes_click"
                />
-<!--            <View
-                android:layout_width="20dp"
-                android:layout_height="2dp"
-                android:elevation="4dp"
-                android:background="@color/grey"/>-->
             <com.makeramen.roundedimageview.RoundedImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -68,11 +63,6 @@
                 android:src="@drawable/ic_words_normal"
 
                 />
-<!--            <View
-                android:layout_width="20dp"
-                android:layout_height="2dp"
-                android:elevation="4dp"
-                android:background="@color/grey"/>-->
             <com.makeramen.roundedimageview.RoundedImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -99,7 +89,6 @@
                 android:elevation="5dp"
                 app:riv_corner_radius="50dp"
                 />
-            <!--android:src="@drawable/hoodie_main"-->
 
         </FrameLayout>
     </LinearLayout>
@@ -176,43 +165,6 @@
 
         <include layout="@layout/bottom_sheet"/>
         </androidx.coordinatorlayout.widget.CoordinatorLayout>
-<!--        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_weight="3"
-            android:weightSum="2"
-            android:layout_marginVertical="50dp"
-            android:layout_marginHorizontal="30dp">
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_margin="10dp"
-                android:hint="Enter first word"
-                />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_margin="10dp"
-                android:hint="Enter second word"
-                />
-
-        </LinearLayout>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="7"
-            android:layout_marginVertical="80dp"
-            android:layout_marginHorizontal="30dp"
-            android:text="OK"
-            android:fontFamily="cursive"
-            android:textStyle="bold"
-            android:textSize="30sp"
-            />-->
     </FrameLayout>
 
 </LinearLayout>
